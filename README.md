@@ -1,5 +1,8 @@
 # 图形元素 · Graphic Elements
 
+> 仓库：**https://github.com/tonymingyang-prog/graphic-elements**（私有） · MIT
+> 上传与更新流程见 [UPLOAD.md](UPLOAD.md)
+
 一套**自建的 PPT 图形元素体系**：把咨询级静态逻辑图 / 架构图拆成可参数化的图形原子，一套 JSON 同时产出**可编辑 PPTX**（原生形状）与**网页 SVG**。
 
 > 不是模板复制品。模板里 1.3 万个形状被归一成 35 个原子，靠参数（层数、条目、行列、配色）重新生成，而不是把某几页抠下来复用。
