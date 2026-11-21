@@ -1227,7 +1227,7 @@
  ],
  "presets": {
   "platform-overview": {
-   "name": "平台总体架构（叠层 + 能力带）",
+   "name": "平台总体架构（叠层 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
@@ -1236,49 +1236,58 @@
    "blocks": 3
   },
   "capability-matrix": {
-   "name": "能力矩阵（四象限）",
+   "name": "能力矩阵（四象限 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
    "palette": "blue",
-   "blocks": 2
+   "blocks": 3
   },
   "process-roadmap": {
-   "name": "流程与路线（V 形 + 时间轴）",
+   "name": "流程与路线（V 形 + 时间轴 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
    "palette": "green",
-   "blocks": 3
+   "blocks": 4
   },
   "ecosystem": {
-   "name": "生态与支撑（中心 + 两侧）",
+   "name": "生态与支撑（中心 + 两侧 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
    "palette": "purple",
-   "blocks": 2
+   "blocks": 3
   },
   "hub-overview": {
-   "name": "中心辐射（一图看全局）",
+   "name": "中心辐射（一图看全局 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
    "palette": "teal",
-   "blocks": 4
+   "blocks": 5
+  },
+  "ring-ecosystem": {
+   "name": "环形体系（同心扇区 + 两侧说明 + 结论条）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "blue",
+   "blocks": 9
   },
   "solution-dual": {
-   "name": "双边方案（双中心桥接）",
+   "name": "双边方案（双中心桥接 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
    "palette": "red",
-   "blocks": 3
+   "blocks": 4
   }
  }
 }
