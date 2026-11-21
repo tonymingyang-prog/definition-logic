@@ -1197,6 +1197,32 @@
    ],
    "variants": [],
    "kind": "generator"
+  },
+  {
+   "id": "conclusion.bar",
+   "name": "结论条",
+   "cat": "text",
+   "tags": [
+    "结论",
+    "收口",
+    "页脚"
+   ],
+   "size": {
+    "w": 1192,
+    "h": 44
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "小标"
+    },
+    {
+     "id": "text",
+     "label": "一句话"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
   }
  ],
  "presets": {
