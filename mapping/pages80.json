@@ -1,0 +1,1051 @@
+{
+ "source": "PPT静态逻辑图模板-完整版 蓝色 by 迟迟（80 页）",
+ "pages": [
+  {
+   "page": 1,
+   "topic": "供应链管理",
+   "logic": "中心环",
+   "logicType": "同心环",
+   "motif": "同心双环 + 外圈弧形标签扇",
+   "atoms": [
+    "medallion",
+    "arc.fan",
+    "rail"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 2,
+   "topic": "迟迟产品架构",
+   "logic": "横向链路",
+   "logicType": "横向链路",
+   "motif": "五段大箭头 + 上下能力/角色清单",
+   "atoms": [
+    "flow.chevron",
+    "stack.list"
+   ],
+   "deckType": "lanes",
+   "coverage": "ok"
+  },
+  {
+   "page": 3,
+   "topic": "让迟迟生活更美好",
+   "logic": "同心环",
+   "logicType": "同心环",
+   "motif": "三环嵌套 + 外圈角色 + 弧形标注",
+   "atoms": [
+    "medallion",
+    "arc.fan",
+    "label.aside"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 4,
+   "topic": "会玩社区",
+   "logic": "双翼闭环",
+   "logicType": "左右对称",
+   "motif": "中心椭圆 + 左右阶段条 + 上下箭头",
+   "atoms": [
+    "dual.hub",
+    "bracket",
+    "chip"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 5,
+   "topic": "物联网行业终端设备",
+   "logic": "中心双列",
+   "logicType": "中心辐射",
+   "motif": "中心圆 + 左右协议/终端列 + 竖排边标",
+   "atoms": [
+    "medallion",
+    "stack.list",
+    "label.aside"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 6,
+   "topic": "直播营销一体化",
+   "logic": "辐射 + 流程",
+   "logicType": "中心辐射",
+   "motif": "中心圆 + 左右扇形 + 右侧漏斗",
+   "atoms": [
+    "hub.radial",
+    "arc.fan",
+    "flow.steps"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 7,
+   "topic": "页面主标题（5 卡 + 平台图）",
+   "logic": "卡片带 + 平台图",
+   "logicType": "分层平台",
+   "motif": "顶部 5 张图标卡 + 下部复杂平台",
+   "atoms": [
+    "card.icon",
+    "platform.disc",
+    "chip"
+   ],
+   "deckType": "stack",
+   "coverage": "part"
+  },
+  {
+   "page": 8,
+   "topic": "企业直播场景矩阵",
+   "logic": "多层弧",
+   "logicType": "半环/多层弧",
+   "motif": "同心弧段多层 + 环形节点",
+   "atoms": [
+    "arc.fan",
+    "hub.radial"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 9,
+   "topic": "楼宇资产运营",
+   "logic": "中心辐射",
+   "logicType": "中心辐射",
+   "motif": "中心圆 + 8 向标签 + 侧注",
+   "atoms": [
+    "hub.radial",
+    "card.icon",
+    "rail"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 10,
+   "topic": "5G 能力延展",
+   "logic": "双列",
+   "logicType": "左右对称",
+   "motif": "左标识 + 两列能力/行业 + 底部趋势行",
+   "atoms": [
+    "stack.list",
+    "label.aside",
+    "divider"
+   ],
+   "deckType": "stack",
+   "coverage": "ok"
+  },
+  {
+   "page": 11,
+   "topic": "IT/IDC 智能运维",
+   "logic": "横向链路",
+   "logicType": "横向链路",
+   "motif": "顶部能力标签 + 四栏流程 + 底部数据带",
+   "atoms": [
+    "flow.steps",
+    "board.columns",
+    "divider"
+   ],
+   "deckType": "lanes",
+   "coverage": "ok"
+  },
+  {
+   "page": 12,
+   "topic": "双十一活动流程",
+   "logic": "立体圆柱 + 时间轴",
+   "logicType": "时间轴",
+   "motif": "3D 圆柱 + 阶段轴 + 左右策略",
+   "atoms": [
+    "platform.disc",
+    "timeline"
+   ],
+   "deckType": "timeline",
+   "coverage": "part"
+  },
+  {
+   "page": 13,
+   "topic": "品牌体验设计",
+   "logic": "四象限放射",
+   "logicType": "矩阵象限",
+   "motif": "中心菱形 + 四角放射 + 四象限说明",
+   "atoms": [
+    "matrix.grid",
+    "hub.radial"
+   ],
+   "deckType": "matrix",
+   "coverage": "ok"
+  },
+  {
+   "page": 14,
+   "topic": "云盘 SaaS",
+   "logic": "平台叠层",
+   "logicType": "分层平台",
+   "motif": "SaaS/PaaS/IaaS 圆柱叠层 + 服务标签",
+   "atoms": [
+    "platform.disc",
+    "tab"
+   ],
+   "deckType": "disc",
+   "coverage": "ok"
+  },
+  {
+   "page": 15,
+   "topic": "数智能力体系",
+   "logic": "多栏平台",
+   "logicType": "分层平台",
+   "motif": "三中台分栏 + 底座 + 中心竖标",
+   "atoms": [
+    "layers.band",
+    "board.columns"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 16,
+   "topic": "云原生生态",
+   "logic": "椭圆底座",
+   "logicType": "分层平台",
+   "motif": "大椭圆底座 + 平台带 + 圆周文字",
+   "atoms": [
+    "layers.band",
+    "arc.fan"
+   ],
+   "deckType": "bands",
+   "coverage": "part"
+  },
+  {
+   "page": 17,
+   "topic": "安全全景",
+   "logic": "中心两翼",
+   "logicType": "左右对称",
+   "motif": "中心 + 左右方案组 + 顶部方案带",
+   "atoms": [
+    "eco.bracket",
+    "stack.list"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 18,
+   "topic": "大模型分层",
+   "logic": "金字塔/冰山",
+   "logicType": "金字塔",
+   "motif": "多层菱形收窄 + 底座",
+   "atoms": [
+    "pyramid.levels",
+    "platform.disc"
+   ],
+   "deckType": "—",
+   "coverage": "part"
+  },
+  {
+   "page": 19,
+   "topic": "组织人事管理",
+   "logic": "外环 + 分区",
+   "logicType": "同心环",
+   "motif": "外环 + 内部虚线分区 + 底部平台带",
+   "atoms": [
+    "zone",
+    "layers.band",
+    "rail"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 20,
+   "topic": "智慧金融通用模型",
+   "logic": "球体能力",
+   "logicType": "中心辐射",
+   "motif": "半球 + 顶部 4 圆 + 多列能力 + 底部圆",
+   "atoms": [
+    "medallion",
+    "hub.radial",
+    "chip"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 21,
+   "topic": "数据服务",
+   "logic": "三段横带",
+   "logicType": "分层平台",
+   "motif": "三条横带 + 中心平台 + 左右资产标签",
+   "atoms": [
+    "layers.band",
+    "rail",
+    "divider"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 22,
+   "topic": "中台架构塔",
+   "logic": "金字塔",
+   "logicType": "金字塔",
+   "motif": "层层收窄塔身 + 左侧竖标",
+   "atoms": [
+    "pyramid.levels",
+    "label.aside"
+   ],
+   "deckType": "—",
+   "coverage": "part"
+  },
+  {
+   "page": 23,
+   "topic": "大模型",
+   "logic": "基座 + 三块",
+   "logicType": "分层平台",
+   "motif": "圆柱基座 + 顶部能力标签 + 左中右三块",
+   "atoms": [
+    "platform.disc",
+    "board.columns"
+   ],
+   "deckType": "disc",
+   "coverage": "part"
+  },
+  {
+   "page": 24,
+   "topic": "大出行系统",
+   "logic": "三层环",
+   "logicType": "同心环",
+   "motif": "生态/产品/技术三层环 + 右标签",
+   "atoms": [
+    "hub.radial",
+    "layers.band"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 25,
+   "topic": "VS 对比",
+   "logic": "对比",
+   "logicType": "对比",
+   "motif": "左右 VS + 底部能力带 + 右策略块",
+   "atoms": [
+    "card.stat",
+    "layers.band"
+   ],
+   "deckType": "compare",
+   "coverage": "ok"
+  },
+  {
+   "page": 26,
+   "topic": "安全双翼",
+   "logic": "双翼",
+   "logicType": "左右对称",
+   "motif": "中心 + 左右两栏 + 底部标准横条",
+   "atoms": [
+    "eco.bracket",
+    "stack.list"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 27,
+   "topic": "数据中台",
+   "logic": "圆柱 + 弧标签",
+   "logicType": "分层平台",
+   "motif": "中心圆柱 + 顶部弧形标签 + 底部技术栈",
+   "atoms": [
+    "platform.disc",
+    "arc.fan",
+    "chip"
+   ],
+   "deckType": "disc",
+   "coverage": "ok"
+  },
+  {
+   "page": 28,
+   "topic": "企业工作台",
+   "logic": "双模平台",
+   "logicType": "分层平台",
+   "motif": "顶部三块 + 稳态/敏态双模 + 平台带",
+   "atoms": [
+    "layers.band",
+    "tab",
+    "bracket"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 29,
+   "topic": "城市大脑",
+   "logic": "平台 + 闭环",
+   "logicType": "分层平台",
+   "motif": "三平台 + 能力列 + 底部闭环环",
+   "atoms": [
+    "layers.band",
+    "hub.radial"
+   ],
+   "deckType": "bands",
+   "coverage": "part"
+  },
+  {
+   "page": 30,
+   "topic": "大数据平台",
+   "logic": "分层 + 外围",
+   "logicType": "分层平台",
+   "motif": "中心球 + 四层带 + 左右保障体系",
+   "atoms": [
+    "layers.band",
+    "hub.radial"
+   ],
+   "deckType": "bands",
+   "coverage": "part"
+  },
+  {
+   "page": 31,
+   "topic": "指标体系",
+   "logic": "三层 + 球",
+   "logicType": "分层平台",
+   "motif": "经营/现场/作业三层 + 左下三球",
+   "atoms": [
+    "flow.steps",
+    "medallion"
+   ],
+   "deckType": "stack",
+   "coverage": "part"
+  },
+  {
+   "page": 32,
+   "topic": "顶层架构",
+   "logic": "圆环 + 层",
+   "logicType": "分层平台",
+   "motif": "中心圆环 + 上下分层 + 两侧竖标",
+   "atoms": [
+    "platform.disc",
+    "layers.band"
+   ],
+   "deckType": "disc",
+   "coverage": "ok"
+  },
+  {
+   "page": 33,
+   "topic": "综合管理服务中心",
+   "logic": "辐射 + 射线",
+   "logicType": "中心辐射",
+   "motif": "底座 + 四模块 + 密集射线",
+   "atoms": [
+    "hub.radial",
+    "decor.orbit"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 34,
+   "topic": "数字会展新基建",
+   "logic": "四象限",
+   "logicType": "矩阵象限",
+   "motif": "中心竖轴 + 四象限 + 底部四块",
+   "atoms": [
+    "matrix.grid",
+    "dual.hub"
+   ],
+   "deckType": "matrix",
+   "coverage": "ok"
+  },
+  {
+   "page": 35,
+   "topic": "健康云",
+   "logic": "分层",
+   "logicType": "分层平台",
+   "motif": "中心圆 + 平台行 + 感知平台",
+   "atoms": [
+    "platform.disc",
+    "layers.band"
+   ],
+   "deckType": "disc",
+   "coverage": "ok"
+  },
+  {
+   "page": 36,
+   "topic": "业务中台",
+   "logic": "六边形 + 环绕",
+   "logicType": "中心辐射",
+   "motif": "中心六边 + 能力环绕 + 底部四平台",
+   "atoms": [
+    "hub.radial",
+    "eco.bracket"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 37,
+   "topic": "大模型生态",
+   "logic": "漏斗",
+   "logicType": "漏斗",
+   "motif": "倒三角漏斗 + 底座 + 两侧行业",
+   "atoms": [
+    "pyramid.levels",
+    "platform.disc"
+   ],
+   "deckType": "—",
+   "coverage": "gap"
+  },
+  {
+   "page": 38,
+   "topic": "贯通能力平台",
+   "logic": "六步流程",
+   "logicType": "横向链路",
+   "motif": "顶部四贯通 + 01–06 步骤 + 两侧能力 + 底座",
+   "atoms": [
+    "flow.steps",
+    "badge.num",
+    "layers.band"
+   ],
+   "deckType": "chevron",
+   "coverage": "ok"
+  },
+  {
+   "page": 39,
+   "topic": "数据安全体系",
+   "logic": "环形 + 分层",
+   "logicType": "同心环",
+   "motif": "中心 + 多层数据带 + 左右环箭头",
+   "atoms": [
+    "hub.radial",
+    "decor.orbit"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 40,
+   "topic": "文字云",
+   "logic": "词云",
+   "logicType": "词云",
+   "motif": "大量文本块堆叠",
+   "atoms": [],
+   "deckType": "—",
+   "coverage": "gap"
+  },
+  {
+   "page": 41,
+   "topic": "分层架构",
+   "logic": "横向分层",
+   "logicType": "分层平台",
+   "motif": "表现/应用/能力/数据四层 + 左右箭头",
+   "atoms": [
+    "layers.band",
+    "flow.chevron"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 42,
+   "topic": "多维产品架构",
+   "logic": "椭圆 + 环标签",
+   "logicType": "同心环",
+   "motif": "中心椭圆 + 环状产品标签 + 顶部两排特点",
+   "atoms": [
+    "medallion",
+    "arc.fan"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 43,
+   "topic": "数据库",
+   "logic": "左中右链路",
+   "logicType": "横向链路",
+   "motif": "立方 + 分层仓 + 立方 + 底元数据",
+   "atoms": [
+    "flow.steps",
+    "layers.band"
+   ],
+   "deckType": "lanes",
+   "coverage": "part"
+  },
+  {
+   "page": 44,
+   "topic": "终端云服务全景图",
+   "logic": "多层半环",
+   "logicType": "半环/多层弧",
+   "motif": "同心多层半环 + 密集小标签",
+   "atoms": [
+    "arc.fan",
+    "decor.orbit"
+   ],
+   "deckType": "—",
+   "coverage": "gap"
+  },
+  {
+   "page": 45,
+   "topic": "解决方案",
+   "logic": "中心辐射 + 外环",
+   "logicType": "中心辐射",
+   "motif": "中心平台 + 8 方案 + 顶部四标签",
+   "atoms": [
+    "hub.radial",
+    "eco.bracket"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 46,
+   "topic": "安全大脑",
+   "logic": "扇区 + 辐射",
+   "logicType": "中心辐射",
+   "motif": "中心球 + 扇区式行业带 + 两侧竖注",
+   "atoms": [
+    "hub.radial",
+    "arc.fan"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 47,
+   "topic": "智能人事",
+   "logic": "流程带 + 模块",
+   "logicType": "横向链路",
+   "motif": "顶部双带 + 中间薪酬 + 左右漏斗/列表",
+   "atoms": [
+    "flow.steps",
+    "layers.band"
+   ],
+   "deckType": "lanes",
+   "coverage": "ok"
+  },
+  {
+   "page": 48,
+   "topic": "安全合规体系",
+   "logic": "山形",
+   "logicType": "金字塔",
+   "motif": "三角形山体 + 分层 + 左右标签",
+   "atoms": [
+    "pyramid.levels",
+    "eco.bracket"
+   ],
+   "deckType": "—",
+   "coverage": "part"
+  },
+  {
+   "page": 49,
+   "topic": "攻防演练",
+   "logic": "中心三圆",
+   "logicType": "中心辐射",
+   "motif": "防/知/查 三圆 + 左右两翼",
+   "atoms": [
+    "medallion",
+    "eco.bracket"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 50,
+   "topic": "品牌分销",
+   "logic": "左中右链路",
+   "logicType": "横向链路",
+   "motif": "三圆 + 中间阶段流程 + 底部四段",
+   "atoms": [
+    "dual.hub",
+    "flow.steps"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 51,
+   "topic": "营销数字化",
+   "logic": "横向全链路",
+   "logicType": "横向链路",
+   "motif": "左侧竖排字 + 多列能力 + 右侧垂直流程",
+   "atoms": [
+    "board.columns",
+    "flow.steps"
+   ],
+   "deckType": "lanes",
+   "coverage": "ok"
+  },
+  {
+   "page": 52,
+   "topic": "产品与服务体系",
+   "logic": "三层体系",
+   "logicType": "分层平台",
+   "motif": "顶部体系 + 中间平台 + 底部核心产品",
+   "atoms": [
+    "layers.band",
+    "board.columns"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 53,
+   "topic": "供应链",
+   "logic": "中心环 + 能力",
+   "logicType": "同心环",
+   "motif": "中心圆 + 中心词云 + 6 大能力 + 底数据",
+   "atoms": [
+    "medallion",
+    "stack.list"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 54,
+   "topic": "智慧城市",
+   "logic": "平台分层",
+   "logicType": "分层平台",
+   "motif": "建筑剪影 + 城市大脑 + 城市云底座",
+   "atoms": [
+    "layers.band",
+    "platform.disc"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 55,
+   "topic": "PPT 架构",
+   "logic": "左右双环",
+   "logicType": "左右对称",
+   "motif": "左右两个大环 + 中心圆 + 顶部标题",
+   "atoms": [
+    "dual.hub",
+    "medallion"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 56,
+   "topic": "平台赋能",
+   "logic": "辐射 + 价值",
+   "logicType": "中心辐射",
+   "motif": "中心圆 + 左侧四象限 + 右侧价值标签",
+   "atoms": [
+    "hub.radial",
+    "matrix.grid"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 57,
+   "topic": "安全分析与管理平台",
+   "logic": "功能分层",
+   "logicType": "分层平台",
+   "motif": "三层功能带 + 底部数据组件",
+   "atoms": [
+    "layers.band",
+    "stack.list"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 58,
+   "topic": "MES",
+   "logic": "中心 + 多层",
+   "logicType": "中心辐射",
+   "motif": "中心 + 上方五环 + 下方平台层",
+   "atoms": [
+    "hub.radial",
+    "platform.disc"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 59,
+   "topic": "安心平台",
+   "logic": "中心 + 双翼",
+   "logicType": "左右对称",
+   "motif": "中心圆 + 左右箭头列 + 底部四提升",
+   "atoms": [
+    "eco.bracket",
+    "flow.steps"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 60,
+   "topic": "DTC 用户价值模型",
+   "logic": "三圆联动",
+   "logicType": "中心辐射",
+   "motif": "左中右三圆 + 三角连线",
+   "atoms": [
+    "dual.hub",
+    "decor.orbit"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 61,
+   "topic": "行业物联半环",
+   "logic": "半环",
+   "logicType": "半环/多层弧",
+   "motif": "弧形半环 + 大量行业标签 + 底部球",
+   "atoms": [
+    "arc.fan",
+    "medallion"
+   ],
+   "deckType": "—",
+   "coverage": "part"
+  },
+  {
+   "page": 62,
+   "topic": "产业协同平台",
+   "logic": "同心圆生态",
+   "logicType": "同心环",
+   "motif": "双环嵌套 + 外环三段",
+   "atoms": [
+    "medallion",
+    "arc.fan"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 63,
+   "topic": "品牌变革",
+   "logic": "底座架构",
+   "logicType": "分层平台",
+   "motif": "顶部三块 + 平台带 + 数字化底座 + 标签带",
+   "atoms": [
+    "layers.band",
+    "board.columns"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 64,
+   "topic": "数据治理",
+   "logic": "闭环",
+   "logicType": "中心辐射",
+   "motif": "左右圆 + 中心圆 + 上下数据流 + 底部系统群",
+   "atoms": [
+    "hub.radial",
+    "flow.steps"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 65,
+   "topic": "经营增长飞轮",
+   "logic": "立方飞轮",
+   "logicType": "中心辐射",
+   "motif": "中心立方 + 左右扇形 + 顶部培训",
+   "atoms": [
+    "platform.disc",
+    "arc.fan"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 66,
+   "topic": "企业绩效服务",
+   "logic": "双环",
+   "logicType": "同心环",
+   "motif": "外环九类客户 + 内环服务类目 + 中心",
+   "atoms": [
+    "arc.fan",
+    "hub.radial"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 67,
+   "topic": "实训室解决方案",
+   "logic": "左右三层",
+   "logicType": "左右对称",
+   "motif": "左侧三层横条 + 右侧三层内容",
+   "atoms": [
+    "board.columns",
+    "layers.band"
+   ],
+   "deckType": "stack",
+   "coverage": "ok"
+  },
+  {
+   "page": 68,
+   "topic": "自动化解决方案",
+   "logic": "三列",
+   "logicType": "左右对称",
+   "motif": "左 9 能力 + 中心 + 右 9 集成能力",
+   "atoms": [
+    "board.columns",
+    "hub.radial"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 69,
+   "topic": "知识产权生态",
+   "logic": "生态环",
+   "logicType": "同心环",
+   "motif": "中心六边 + 外环多段 + 底部标准",
+   "atoms": [
+    "hub.radial",
+    "eco.bracket"
+   ],
+   "deckType": "hub",
+   "coverage": "part"
+  },
+  {
+   "page": 70,
+   "topic": "一站式数字化",
+   "logic": "双月环",
+   "logicType": "左右对称",
+   "motif": "左右月牙环 + 中间信息对接",
+   "atoms": [
+    "dual.hub",
+    "arc.fan"
+   ],
+   "deckType": "eco",
+   "coverage": "part"
+  },
+  {
+   "page": 71,
+   "topic": "品牌推广评估",
+   "logic": "分层平台",
+   "logicType": "分层平台",
+   "motif": "多层平台 + 左右侧注 + 底部词云",
+   "atoms": [
+    "layers.band",
+    "stack.list"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 72,
+   "topic": "转化流程",
+   "logic": "中心 + 四方",
+   "logicType": "中心辐射",
+   "motif": "中心六边 + 左右上下资源方 + 底部小词",
+   "atoms": [
+    "medallion",
+    "flow.steps"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 73,
+   "topic": "AI 生态平台（3D）",
+   "logic": "等距立体",
+   "logicType": "等距立体",
+   "motif": "大量等距立体块 + 中心 +AI",
+   "atoms": [],
+   "deckType": "—",
+   "coverage": "gap"
+  },
+  {
+   "page": 74,
+   "topic": "研发中台",
+   "logic": "扇形分层",
+   "logicType": "半环/多层弧",
+   "motif": "扇形分层 + 左右侧注 + 底部平台",
+   "atoms": [
+    "arc.fan",
+    "layers.band"
+   ],
+   "deckType": "—",
+   "coverage": "gap"
+  },
+  {
+   "page": 75,
+   "topic": "服务能力全景图",
+   "logic": "环",
+   "logicType": "同心环",
+   "motif": "外环标签 + 内环 + 中心 logo + 左右注释",
+   "atoms": [
+    "arc.fan",
+    "hub.radial"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  },
+  {
+   "page": 76,
+   "topic": "官方服务",
+   "logic": "双列 + 中心",
+   "logicType": "左右对称",
+   "motif": "左右两条竖列 + 中心圆 + 底部横条",
+   "atoms": [
+    "board.columns",
+    "medallion"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 77,
+   "topic": "绿色低碳工业互联网",
+   "logic": "云边端",
+   "logicType": "分层平台",
+   "motif": "管理端 + 平台 + 设备端 + 左右标准",
+   "atoms": [
+    "layers.band",
+    "platform.disc"
+   ],
+   "deckType": "bands",
+   "coverage": "ok"
+  },
+  {
+   "page": 78,
+   "topic": "延迟营销（蜂窝）",
+   "logic": "蜂窝",
+   "logicType": "蜂窝",
+   "motif": "中心六边 + 六边环 + 左右标签",
+   "atoms": [],
+   "deckType": "—",
+   "coverage": "gap"
+  },
+  {
+   "page": 79,
+   "topic": "生态元脑",
+   "logic": "左右伙伴",
+   "logicType": "左右对称",
+   "motif": "中心 + 左右伙伴 + 上下平台",
+   "atoms": [
+    "eco.bracket",
+    "hub.radial"
+   ],
+   "deckType": "eco",
+   "coverage": "ok"
+  },
+  {
+   "page": 80,
+   "topic": "营销闭环",
+   "logic": "闭环飞轮",
+   "logicType": "中心辐射",
+   "motif": "左右双闭环 + 中心圆 + 四象限",
+   "atoms": [
+    "flow.steps",
+    "hub.radial"
+   ],
+   "deckType": "hub",
+   "coverage": "ok"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+# dsh-guizang-elements —— 图形元素库
+# Host 半边：注册元素工具、skill、展示页（/guizang-elements/）
+# 浏览器半边由 package.json 的 dsh.client 声明加载（侧栏入口 + iframe 面板）
+- insert:
+    - id: guizang-elements
+      name: 'dsh-guizang-elements'

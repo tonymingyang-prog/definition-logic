@@ -1,0 +1,35 @@
+{
+  "name": "dsh-guizang-elements",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "图形元素库 · DSH 插件：把咨询级静态逻辑图拆成可复用图形原子，一套 JSON 同时产出可编辑 PPTX 与网页 SVG。",
+  "main": "lib/index.js",
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "data",
+    "gallery",
+    "skills",
+    "py",
+    "cordis.patch.yml",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}

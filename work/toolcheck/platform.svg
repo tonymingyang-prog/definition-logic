@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="420" viewBox="0 0 940 420" overflow="visible">
+<defs></defs>
+<rect x="0" y="0" width="940" height="420" fill="#FFFFFF"/>
+<g><ellipse cx="470" cy="116" rx="342" ry="24" fill="#ADBEA3" stroke="#C5E5B3" stroke-width="1"/>
+<rect x="128" y="68" width="684" height="48" fill="#BED1B4" stroke="#C5E5B3" stroke-width="1"/>
+<ellipse cx="470" cy="68" rx="342" ry="24" fill="#D8EECC" stroke="#C5E5B3" stroke-width="1"/>
+<g><text x="154" y="71.8" font-family="微软雅黑" font-size="15" font-weight="700" fill="#1F4D00" text-anchor="start">saas</text></g>
+<path d="M352,56 H468 A14,14 0 0 1 482,70 V70 A14,14 0 0 1 468,84 H352 A14,14 0 0 1 338,70 V70 A14,14 0 0 1 352,56 Z" fill="#FFFFFF" stroke="#9ED481" stroke-width="1"/>
+<g><text x="410" y="71.2" font-family="微软雅黑" font-size="10" font-weight="400" fill="#3D434B" text-anchor="middle">营销云</text></g>
+<path d="M504,56 H620 A14,14 0 0 1 634,70 V70 A14,14 0 0 1 620,84 H504 A14,14 0 0 1 490,70 V70 A14,14 0 0 1 504,56 Z" fill="#FFFFFF" stroke="#9ED481" stroke-width="1"/>
+<g><text x="562" y="71.2" font-family="微软雅黑" font-size="10" font-weight="400" fill="#3D434B" text-anchor="middle">供应云</text></g>
+<path d="M656,56 H772 A14,14 0 0 1 786,70 V70 A14,14 0 0 1 772,84 H656 A14,14 0 0 1 642,70 V70 A14,14 0 0 1 656,56 Z" fill="#FFFFFF" stroke="#9ED481" stroke-width="1"/>
+<g><text x="714" y="71.2" font-family="微软雅黑" font-size="10" font-weight="400" fill="#3D434B" text-anchor="middle">财务云</text></g>
+<ellipse cx="470" cy="234" rx="386" ry="24" fill="#9CB68E" stroke="#C5E5B3" stroke-width="1"/>
+<rect x="84" y="186" width="772" height="48" fill="#ACC99C" stroke="#C5E5B3" stroke-width="1"/>
+<ellipse cx="470" cy="186" rx="386" ry="24" fill="#C3E4B1" stroke="#C5E5B3" stroke-width="1"/>
+<g><text x="110" y="189.8" font-family="微软雅黑" font-size="15" font-weight="700" fill="#1F4D00" text-anchor="start">paas</text></g>
+<path d="M308,174 H430 A14,14 0 0 1 444,188 V188 A14,14 0 0 1 430,202 H308 A14,14 0 0 1 294,188 V188 A14,14 0 0 1 308,174 Z" fill="#FFFFFF" stroke="#9ED481" stroke-width="1"/>
+<g><text x="369" y="189.2" font-family="微软雅黑" font-size="10" font-weight="400" fill="#3D434B" text-anchor="middle">数据中台</text></g>
+<path d="M466,174 H588 A14,14 0 0 1 602,188 V188 A14,14 0 0 1 588,202 H466 A14,14 0 0 1 452,188 V188 A14,14 0 0 1 466,174 Z" fill="#FFFFFF" stroke="#9ED481" stroke-width="1"/>
+<g><text x="527" y="189.2" font-family="微软雅黑" font-size="10" font-weight="400" fill="#3D434B" text-anchor="middle">业务中台</text></g>
+<ellipse cx="470" cy="352" rx="430" ry="24" fill="#8BAE77" stroke="#C5E5B3" stroke-width="1"/>
+<rect x="40" y="304" width="860" height="48" fill="#99C083" stroke="#C5E5B3" stroke-width="1"/>
+<ellipse cx="470" cy="304" rx="430" ry="24" fill="#AEDA95" stroke="#C5E5B3" stroke-width="1"/>
+<g><text x="66" y="307.8" font-family="微软雅黑" font-size="15" font-weight="700" fill="#1F4D00" text-anchor="start">iaas</text></g>
+<path d="M264,292 H386 A14,14 0 0 1 400,306 V306 A14,14 0 0 1 386,320 H264 A14,14 0 0 1 250,306 V306 A14,14 0 0 1 264,292 Z" fill="#FFFFFF" stroke="#9ED481" stroke-width="1"/>
+<g><text x="325" y="307.2" font-family="微软雅黑" font-size="10" font-weight="400" fill="#3D434B" text-anchor="middle">弹性计算</text></g>
+<path d="M422,292 H544 A14,14 0 0 1 558,306 V306 A14,14 0 0 1 544,320 H422 A14,14 0 0 1 408,306 V306 A14,14 0 0 1 422,292 Z" fill="#FFFFFF" stroke="#9ED481" stroke-width="1"/>
+<g><text x="483" y="307.2" font-family="微软雅黑" font-size="10" font-weight="400" fill="#3D434B" text-anchor="middle">对象存储</text></g></g>
+</svg>

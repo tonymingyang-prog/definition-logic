@@ -1,0 +1,20 @@
+# 依赖与构建产物
+node_modules/
+out/
+dist/
+*.log
+
+# 本机运行时与调试
+.dsh-ppt/
+refs/
+work/e2e*/
+work/training/
+work/*-render*/
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 生成物（保留 examples 里的成品）
+*.tmp

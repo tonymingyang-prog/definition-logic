@@ -1,0 +1,1035 @@
+{
+ "name": "图形元素库",
+ "version": "0.1.0",
+ "source": "6 份 WPS 白底咨询级静态逻辑图模板（橙/红/蓝/绿/青/紫，各 80 页）",
+ "tokens": {
+  "type": {
+   "display": {
+    "size": 40,
+    "weight": 700,
+    "color": "ink",
+    "lh": 1.2
+   },
+   "h1": {
+    "size": 30,
+    "weight": 700,
+    "color": "ink",
+    "lh": 1.25
+   },
+   "h2": {
+    "size": 22,
+    "weight": 700,
+    "color": "ink",
+    "lh": 1.3
+   },
+   "h3": {
+    "size": 17,
+    "weight": 700,
+    "color": "ink",
+    "lh": 1.35
+   },
+   "body": {
+    "size": 13,
+    "weight": 400,
+    "color": "body",
+    "lh": 1.5
+   },
+   "small": {
+    "size": 11.5,
+    "weight": 400,
+    "color": "body",
+    "lh": 1.45
+   },
+   "micro": {
+    "size": 9.5,
+    "weight": 400,
+    "color": "muted",
+    "lh": 1.4
+   },
+   "kicker": {
+    "size": 11,
+    "weight": 700,
+    "color": "primary",
+    "lh": 1.2,
+    "tracking": 2
+   }
+  },
+  "font": {
+   "cjk": "微软雅黑",
+   "latin": "Arial",
+   "mono": "Consolas"
+  }
+ },
+ "palettes": {
+  "orange": {
+   "id": "orange",
+   "name": "橙",
+   "primary": "#FF891D",
+   "secondary": "#FFB11F",
+   "accent": "#FF7A33",
+   "deep": "#8A3D00"
+  },
+  "red": {
+   "id": "red",
+   "name": "红",
+   "primary": "#F5483B",
+   "secondary": "#FF7F72",
+   "accent": "#FD1943",
+   "deep": "#7A0E12"
+  },
+  "blue": {
+   "id": "blue",
+   "name": "蓝",
+   "primary": "#1E63E9",
+   "secondary": "#41B2EB",
+   "accent": "#0AE8FD",
+   "deep": "#0B2E7A"
+  },
+  "green": {
+   "id": "green",
+   "name": "绿",
+   "primary": "#3DA802",
+   "secondary": "#7BD14A",
+   "accent": "#1AF64E",
+   "deep": "#1F4D00"
+  },
+  "teal": {
+   "id": "teal",
+   "name": "青",
+   "primary": "#16B694",
+   "secondary": "#5BEBA0",
+   "accent": "#0BDD6A",
+   "deep": "#064C3C"
+  },
+  "purple": {
+   "id": "purple",
+   "name": "紫",
+   "primary": "#A93BF5",
+   "secondary": "#DD0CF8",
+   "accent": "#E961FB",
+   "deep": "#45096E"
+  }
+ },
+ "categories": [
+  {
+   "id": "surface",
+   "name": "卡片与标签",
+   "desc": "卡片、页签、徽标、指标"
+  },
+  {
+   "id": "frame",
+   "name": "容器与栏位",
+   "desc": "分区、括号、纵向栏"
+  },
+  {
+   "id": "flow",
+   "name": "流程与路径",
+   "desc": "V 形流程、步骤、时间轴、泳道"
+  },
+  {
+   "id": "structure",
+   "name": "结构与体系",
+   "desc": "平台叠层、中心圆盘、辐射、矩阵"
+  },
+  {
+   "id": "text",
+   "name": "文字块",
+   "desc": "标题、眉标、说明"
+  },
+  {
+   "id": "decor",
+   "name": "装饰件",
+   "desc": "点阵、轨道、底衬"
+  }
+ ],
+ "elements": [
+  {
+   "id": "card.plain",
+   "name": "标准卡片",
+   "cat": "surface",
+   "tags": [
+    "卡片",
+    "card",
+    "标题+说明"
+   ],
+   "size": {
+    "w": 300,
+    "h": 96
+   },
+   "slots": [
+    {
+     "id": "title",
+     "label": "标题"
+    },
+    {
+     "id": "desc",
+     "label": "说明"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "card.icon",
+   "name": "图标卡片",
+   "cat": "surface",
+   "tags": [
+    "卡片",
+    "图标",
+    "能力"
+   ],
+   "size": {
+    "w": 300,
+    "h": 132
+   },
+   "slots": [
+    {
+     "id": "title",
+     "label": "标题"
+    },
+    {
+     "id": "desc",
+     "label": "说明"
+    },
+    {
+     "id": "glyph",
+     "label": "图标字"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "card.stat",
+   "name": "指标卡片",
+   "cat": "surface",
+   "tags": [
+    "数字",
+    "KPI",
+    "指标"
+   ],
+   "size": {
+    "w": 236,
+    "h": 112
+   },
+   "slots": [
+    {
+     "id": "value",
+     "label": "数值"
+    },
+    {
+     "id": "label",
+     "label": "标签"
+    },
+    {
+     "id": "delta",
+     "label": "增量"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "tab",
+   "name": "页签 / 胶囊",
+   "cat": "surface",
+   "tags": [
+    "tab",
+    "pill",
+    "标签"
+   ],
+   "size": {
+    "w": 150,
+    "h": 40
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "文字"
+    }
+   ],
+   "variants": [
+    "filled",
+    "outline",
+    "ghost"
+   ],
+   "kind": "primitive"
+  },
+  {
+   "id": "chip",
+   "name": "小标签",
+   "cat": "surface",
+   "tags": [
+    "chip",
+    "tag",
+    "标注"
+   ],
+   "size": {
+    "w": 104,
+    "h": 26
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "文字"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "badge.num",
+   "name": "序号徽标",
+   "cat": "surface",
+   "tags": [
+    "步骤",
+    "编号",
+    "step"
+   ],
+   "size": {
+    "w": 48,
+    "h": 48
+   },
+   "slots": [
+    {
+     "id": "num",
+     "label": "序号"
+    }
+   ],
+   "variants": [
+    "solid",
+    "ring"
+   ],
+   "kind": "primitive"
+  },
+  {
+   "id": "ribbon",
+   "name": "标题横幅",
+   "cat": "surface",
+   "tags": [
+    "banner",
+    "标题条",
+    "章节"
+   ],
+   "size": {
+    "w": 340,
+    "h": 44
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "文字"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "label.aside",
+   "name": "侧边防标签",
+   "cat": "surface",
+   "tags": [
+    "竖排",
+    "aside",
+    "分区"
+   ],
+   "size": {
+    "w": 34,
+    "h": 180
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "文字"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "metric.ring",
+   "name": "环形进度",
+   "cat": "surface",
+   "tags": [
+    "donut",
+    "占比",
+    "进度"
+   ],
+   "size": {
+    "w": 168,
+    "h": 168
+   },
+   "slots": [
+    {
+     "id": "value",
+     "label": "数值"
+    },
+    {
+     "id": "label",
+     "label": "说明"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "callout",
+   "name": "标注气泡",
+   "cat": "surface",
+   "tags": [
+    "气泡",
+    "注释",
+    "callout"
+   ],
+   "size": {
+    "w": 260,
+    "h": 96
+   },
+   "slots": [
+    {
+     "id": "title",
+     "label": "标题"
+    },
+    {
+     "id": "desc",
+     "label": "说明"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "zone",
+   "name": "虚线分区框",
+   "cat": "frame",
+   "tags": [
+    "zone",
+    "容器",
+    "分组"
+   ],
+   "size": {
+    "w": 420,
+    "h": 240
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "区名"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "bracket",
+   "name": "侧边括号",
+   "cat": "frame",
+   "tags": [
+    "bracket",
+    "括注",
+    "对照"
+   ],
+   "size": {
+    "w": 96,
+    "h": 240
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "文字"
+    }
+   ],
+   "variants": [
+    "left",
+    "right"
+   ],
+   "kind": "primitive"
+  },
+  {
+   "id": "rail",
+   "name": "纵向栏位",
+   "cat": "frame",
+   "tags": [
+    "栏",
+    "rail",
+    "清单"
+   ],
+   "size": {
+    "w": 150,
+    "h": 400
+   },
+   "slots": [
+    {
+     "id": "title",
+     "label": "栏标题"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "divider",
+   "name": "分隔标注",
+   "cat": "surface",
+   "tags": [
+    "divider",
+    "过渡",
+    "说明"
+   ],
+   "size": {
+    "w": 320,
+    "h": 36
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "文字"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "metric.bar",
+   "name": "横向进度条",
+   "cat": "surface",
+   "tags": [
+    "bar",
+    "占比",
+    "对比"
+   ],
+   "size": {
+    "w": 340,
+    "h": 54
+   },
+   "slots": [
+    {
+     "id": "label",
+     "label": "标签"
+    },
+    {
+     "id": "value",
+     "label": "数值"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "title.block",
+   "name": "标题块",
+   "cat": "text",
+   "tags": [
+    "标题",
+    "title",
+    "页眉"
+   ],
+   "size": {
+    "w": 640,
+    "h": 96
+   },
+   "slots": [
+    {
+     "id": "kicker",
+     "label": "眉标"
+    },
+    {
+     "id": "title",
+     "label": "主标题"
+    },
+    {
+     "id": "desc",
+     "label": "副说明"
+    }
+   ],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "flow.chevron",
+   "name": "V 形流程",
+   "cat": "flow",
+   "tags": [
+    "流程",
+    "chevron",
+    "阶段"
+   ],
+   "size": {
+    "w": 1180,
+    "h": 128
+   },
+   "slots": [
+    {
+     "id": "items",
+     "label": "步骤（3–6）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "flow.steps",
+   "name": "节点步骤流",
+   "cat": "flow",
+   "tags": [
+    "流程",
+    "步骤",
+    "编号"
+   ],
+   "size": {
+    "w": 1180,
+    "h": 150
+   },
+   "slots": [
+    {
+     "id": "items",
+     "label": "步骤（3–5）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "flow.lanes",
+   "name": "纵向泳道带",
+   "cat": "flow",
+   "tags": [
+    "泳道",
+    "分层",
+    "能力带"
+   ],
+   "size": {
+    "w": 1100,
+    "h": 440
+   },
+   "slots": [
+    {
+     "id": "lanes",
+     "label": "层（2–5）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "hub.radial",
+   "name": "中心辐射",
+   "cat": "structure",
+   "tags": [
+    "hub",
+    "辐射",
+    "生态"
+   ],
+   "size": {
+    "w": 900,
+    "h": 620
+   },
+   "slots": [
+    {
+     "id": "center",
+     "label": "中心"
+    },
+    {
+     "id": "items",
+     "label": "外围节点（4–8）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "timeline",
+   "name": "时间轴",
+   "cat": "flow",
+   "tags": [
+    "时间",
+    "roadmap",
+    "里程碑"
+   ],
+   "size": {
+    "w": 1120,
+    "h": 260
+   },
+   "slots": [
+    {
+     "id": "items",
+     "label": "里程碑（3–6）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "matrix.grid",
+   "name": "矩阵网格",
+   "cat": "structure",
+   "tags": [
+    "矩阵",
+    "2x2",
+    "对比"
+   ],
+   "size": {
+    "w": 940,
+    "h": 580
+   },
+   "slots": [
+    {
+     "id": "cols",
+     "label": "列（2–4）"
+    },
+    {
+     "id": "rows",
+     "label": "行（2–4）"
+    },
+    {
+     "id": "cells",
+     "label": "单元格文字"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "pyramid.levels",
+   "name": "金字塔层级",
+   "cat": "structure",
+   "tags": [
+    "金字塔",
+    "层级",
+    "漏斗"
+   ],
+   "size": {
+    "w": 720,
+    "h": 420
+   },
+   "slots": [
+    {
+     "id": "items",
+     "label": "层级（3–5，自上而下）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "layers.band",
+   "name": "横向分层",
+   "cat": "structure",
+   "tags": [
+    "分层",
+    "架构",
+    "band"
+   ],
+   "size": {
+    "w": 980,
+    "h": 420
+   },
+   "slots": [
+    {
+     "id": "layers",
+     "label": "层（3–5）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "platform.disc",
+   "name": "平台叠层（等距）",
+   "cat": "structure",
+   "tags": [
+    "平台",
+    "等距",
+    "底座"
+   ],
+   "size": {
+    "w": 940,
+    "h": 420
+   },
+   "slots": [
+    {
+     "id": "layers",
+     "label": "平台层（2–4，自下而上）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "medallion",
+   "name": "中心圆盘",
+   "cat": "structure",
+   "tags": [
+    "medallion",
+    "圆盘",
+    "平台"
+   ],
+   "size": {
+    "w": 720,
+    "h": 700
+   },
+   "slots": [
+    {
+     "id": "center",
+     "label": "中心文字"
+    },
+    {
+     "id": "items",
+     "label": "外圈标签（6–10）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "arc.fan",
+   "name": "弧形标签扇",
+   "cat": "structure",
+   "tags": [
+    "弧线",
+    "旋转标签",
+    "全景"
+   ],
+   "size": {
+    "w": 1000,
+    "h": 460
+   },
+   "slots": [
+    {
+     "id": "items",
+     "label": "标签（5–12）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "dual.hub",
+   "name": "双心桥接",
+   "cat": "structure",
+   "tags": [
+    "双中心",
+    "桥接",
+    "协同"
+   ],
+   "size": {
+    "w": 1000,
+    "h": 440
+   },
+   "slots": [
+    {
+     "id": "left",
+     "label": "左中心"
+    },
+    {
+     "id": "right",
+     "label": "右中心"
+    },
+    {
+     "id": "bridge",
+     "label": "桥接文字"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "eco.bracket",
+   "name": "主体 + 两侧支撑",
+   "cat": "structure",
+   "tags": [
+    "bracket",
+    "生态",
+    "支撑"
+   ],
+   "size": {
+    "w": 1120,
+    "h": 540
+   },
+   "slots": [
+    {
+     "id": "center",
+     "label": "主体"
+    },
+    {
+     "id": "left",
+     "label": "左侧项"
+    },
+    {
+     "id": "right",
+     "label": "右侧项"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "stack.list",
+   "name": "纵向清单",
+   "cat": "flow",
+   "tags": [
+    "清单",
+    "stack",
+    "路径"
+   ],
+   "size": {
+    "w": 560,
+    "h": 460
+   },
+   "slots": [
+    {
+     "id": "items",
+     "label": "条目（3–5）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "board.columns",
+   "name": "看板分栏",
+   "cat": "flow",
+   "tags": [
+    "看板",
+    "kanban",
+    "分组"
+   ],
+   "size": {
+    "w": 1000,
+    "h": 520
+   },
+   "slots": [
+    {
+     "id": "cols",
+     "label": "栏（2–4）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "decor.dot-arc",
+   "name": "点阵弧",
+   "cat": "decor",
+   "tags": [
+    "装饰",
+    "点阵",
+    "弧线"
+   ],
+   "size": {
+    "w": 400,
+    "h": 120
+   },
+   "slots": [],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "decor.orbit",
+   "name": "虚线轨道",
+   "cat": "decor",
+   "tags": [
+    "装饰",
+    "轨道",
+    "环"
+   ],
+   "size": {
+    "w": 420,
+    "h": 180
+   },
+   "slots": [],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "decor.wash",
+   "name": "柔光底衬",
+   "cat": "decor",
+   "tags": [
+    "装饰",
+    "背景",
+    "渐变"
+   ],
+   "size": {
+    "w": 420,
+    "h": 260
+   },
+   "slots": [],
+   "variants": [],
+   "kind": "primitive"
+  },
+  {
+   "id": "decor.corner",
+   "name": "角标刻度",
+   "cat": "decor",
+   "tags": [
+    "装饰",
+    "角",
+    "刻度"
+   ],
+   "size": {
+    "w": 120,
+    "h": 120
+   },
+   "slots": [],
+   "variants": [],
+   "kind": "primitive"
+  }
+ ],
+ "presets": {
+  "platform-overview": {
+   "name": "平台总体架构（叠层 + 能力带）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "orange",
+   "blocks": 3
+  },
+  "capability-matrix": {
+   "name": "能力矩阵（四象限）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "blue",
+   "blocks": 2
+  },
+  "process-roadmap": {
+   "name": "流程与路线（V 形 + 时间轴）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "green",
+   "blocks": 3
+  },
+  "ecosystem": {
+   "name": "生态与支撑（中心 + 两侧）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "purple",
+   "blocks": 2
+  },
+  "hub-overview": {
+   "name": "中心辐射（一图看全局）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "teal",
+   "blocks": 4
+  },
+  "solution-dual": {
+   "name": "双边方案（双中心桥接）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "red",
+   "blocks": 3
+  }
+ }
+}

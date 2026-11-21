@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" overflow="visible">
+<defs></defs>
+<rect x="0" y="0" width="1280" height="720" fill="#FFFFFF"/>
+<g><g><text x="100" y="48.2" font-family="微软雅黑" font-size="10" font-weight="700" fill="#FF891D" text-anchor="start" letter-spacing="2">FIGURE</text></g>
+<g><text x="100" y="82.6" font-family="微软雅黑" font-size="30" font-weight="700" fill="#1F2328" text-anchor="start">用元素拼一页</text></g>
+<rect x="100" y="104" width="44" height="3" fill="#FF891D" stroke="none"/>
+<g><text x="100" y="123.84" font-family="微软雅黑" font-size="12" font-weight="400" fill="#7A828C" text-anchor="start">两块卡片 + 一条时间轴</text></g>
+<path d="M70,170 H286 A10,10 0 0 1 296,180 V272 A10,10 0 0 1 286,282 H70 A10,10 0 0 1 60,272 V180 A10,10 0 0 1 70,170 Z" fill="#FFFFFF" stroke="#FFDCBB" stroke-width="1"/>
+<g><text x="80" y="215.52" font-family="微软雅黑" font-size="36" font-weight="700" fill="#FF891D" text-anchor="start">92%</text></g>
+<g><text x="80" y="245.43" font-family="微软雅黑" font-size="11.5" font-weight="400" fill="#3D434B" text-anchor="start">线上化率</text></g>
+<path d="M89,254 H117 A9,9 0 0 1 126,263 V263 A9,9 0 0 1 117,272 H89 A9,9 0 0 1 80,263 V263 A9,9 0 0 1 89,254 Z" fill="#FFECDB" stroke="none"/>
+<g><text x="103" y="264.14000000000004" font-family="微软雅黑" font-size="9.5" font-weight="700" fill="#D17018" text-anchor="middle">+8pt</text></g>
+<path d="M330,170 H546 A10,10 0 0 1 556,180 V272 A10,10 0 0 1 546,282 H330 A10,10 0 0 1 320,272 V180 A10,10 0 0 1 330,170 Z" fill="#FFFFFF" stroke="#FFDCBB" stroke-width="1"/>
+<g><text x="340" y="215.52" font-family="微软雅黑" font-size="36" font-weight="700" fill="#FF891D" text-anchor="start">3.5d</text></g>
+<g><text x="340" y="245.43" font-family="微软雅黑" font-size="11.5" font-weight="400" fill="#3D434B" text-anchor="start">平均交付周期</text></g>
+<path d="M349,254 H385 A9,9 0 0 1 394,263 V263 A9,9 0 0 1 385,272 H349 A9,9 0 0 1 340,263 V263 A9,9 0 0 1 349,254 Z" fill="#FFECDB" stroke="none"/>
+<g><text x="367" y="264.14000000000004" font-family="微软雅黑" font-size="9.5" font-weight="700" fill="#D17018" text-anchor="middle">-1.2d</text></g>
+<line x1="100" y1="450" x2="1140" y2="450" stroke="#FFC48E" stroke-width="2"/>
+<ellipse cx="100" cy="450" rx="9" ry="9" fill="#FF891D" stroke="none"/>
+<ellipse cx="100" cy="450" rx="4" ry="4" fill="#fff" stroke="none"/>
+<line x1="100" y1="420" x2="100" y2="450" stroke="#FF891D" stroke-width="1.2"/>
+<g><text x="100" y="368.61" font-family="微软雅黑" font-size="10.5" font-weight="700" fill="#FF891D" text-anchor="middle">2025 Q1</text></g>
+<g><text x="100" y="390.66" font-family="微软雅黑" font-size="13" font-weight="700" fill="#1F2328" text-anchor="middle">底座搭建</text></g>
+<g><text x="100" y="411.79" font-family="微软雅黑" font-size="9.5" font-weight="400" fill="#7A828C" text-anchor="middle">云资源与接入</text></g>
+<ellipse cx="446.6666666666667" cy="450" rx="9" ry="9" fill="#FF891D" stroke="none"/>
+<ellipse cx="446.6666666666667" cy="450" rx="4" ry="4" fill="#fff" stroke="none"/>
+<line x1="446.6666666666667" y1="462" x2="446.6666666666667" y2="450" stroke="#FF891D" stroke-width="1.2"/>
+<g><text x="446.6666666666667" y="486.61" font-family="微软雅黑" font-size="10.5" font-weight="700" fill="#FF891D" text-anchor="middle">2025 Q2</text></g>
+<g><text x="446.6666666666667" y="508.66" font-family="微软雅黑" font-size="13" font-weight="700" fill="#1F2328" text-anchor="middle">中台成型</text></g>
+<g><text x="446.6666666666667" y="529.79" font-family="微软雅黑" font-size="9.5" font-weight="400" fill="#7A828C" text-anchor="middle">用户/订单域</text></g>
+<ellipse cx="793.3333333333334" cy="450" rx="9" ry="9" fill="#FF891D" stroke="none"/>
+<ellipse cx="793.3333333333334" cy="450" rx="4" ry="4" fill="#fff" stroke="none"/>
+<line x1="793.3333333333334" y1="420" x2="793.3333333333334" y2="450" stroke="#FF891D" stroke-width="1.2"/>
+<g><text x="793.3333333333334" y="368.61" font-family="微软雅黑" font-size="10.5" font-weight="700" fill="#FF891D" text-anchor="middle">2025 Q3</text></g>
+<g><text x="793.3333333333334" y="390.66" font-family="微软雅黑" font-size="13" font-weight="700" fill="#1F2328" text-anchor="middle">业务迁移</text></g>
+<g><text x="793.3333333333334" y="411.79" font-family="微软雅黑" font-size="9.5" font-weight="400" fill="#7A828C" text-anchor="middle">两条线切流</text></g>
+<ellipse cx="1140" cy="450" rx="9" ry="9" fill="#FF891D" stroke="none"/>
+<ellipse cx="1140" cy="450" rx="4" ry="4" fill="#fff" stroke="none"/>
+<line x1="1140" y1="462" x2="1140" y2="450" stroke="#FF891D" stroke-width="1.2"/>
+<g><text x="1140" y="486.61" font-family="微软雅黑" font-size="10.5" font-weight="700" fill="#FF891D" text-anchor="middle">2025 Q4</text></g>
+<g><text x="1140" y="508.66" font-family="微软雅黑" font-size="13" font-weight="700" fill="#1F2328" text-anchor="middle">规模化</text></g>
+<g><text x="1140" y="529.79" font-family="微软雅黑" font-size="9.5" font-weight="400" fill="#7A828C" text-anchor="middle">口径统一</text></g></g>
+</svg>
