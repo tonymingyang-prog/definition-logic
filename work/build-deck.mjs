@@ -16,21 +16,28 @@ function overviewScene(list, title, sub) {
   text(s, 44, 36, 900, 34, title, { size: 26, weight: 700, color: pal.ink });
   text(s, 44, 74, 1000, 20, sub, { size: 11.5, weight: 400, color: pal.muted });
   rect(s, 44, 104, 44, 3, { fill: pal.primary });
-  const cols = 7, rows = 4;
-  const cellW = (1280 - 88 - (cols - 1) * 8) / cols;
-  const cellH = (720 - 140 - (rows - 1) * 8) / rows;
+  const cols = 6, rows = 4;
+  const cellW = (1280 - 88 - (cols - 1) * 10) / cols;
+  const cellH = (720 - 142 - (rows - 1) * 8) / rows;
   list.forEach((def, i) => {
-    const cx = 44 + (i % cols) * (cellW + 8);
+    const cx = 44 + (i % cols) * (cellW + 10);
     const cy = 128 + Math.floor(i / cols) * (cellH + 8);
     rect(s, cx, cy, cellW, cellH, { r: 6, fill: '#FCFCFB', stroke: '#EDEEF0', sw: 1 });
-    const bw = cellW - 16, bh = cellH - 34;
+    const bw = cellW - 18, bh = cellH - 34;
     const k = Math.min(bw / def.w, bh / def.h);
+    const before = s.items.length;
     place(s, def, { x: cx + (cellW - def.w * k) / 2, y: cy + 8 + (bh - def.h * k) / 2, w: def.w * k, h: def.h * k }, pal, sampleContent(def));
-    text(s, cx + 6, cy + cellH - 22, cellW - 12, 16, def.name, { size: 9, weight: 700, color: pal.body, align: 'center', noWrap: true });
+    // 形状丰富的原子：去掉文字，只留轮廓（缩到 150px 宽时文字已不可读）
+    const seg = s.items.slice(before);
+    const shapes = seg.filter((it) => it.type !== 'text').length;
+    if (shapes >= 3) {
+      s.items.length = before;
+      for (const it of seg) if (it.type !== 'text') s.items.push(it);
+    }
+    text(s, cx + 6, cy + cellH - 22, cellW - 12, 16, def.name, { size: 9.5, weight: 700, color: pal.body, align: 'center', noWrap: true });
   });
   return s;
 }
-
 const half = Math.ceil(ALL.length / 2);
 const slides = [
   overviewScene(ALL.slice(0, half), `图形元素 · ${ALL.length} 个可复用图形`, '第一批：卡片 / 容器 / 流程 / 结构 / 文字 / 装饰 —— 同一套几何，导出可编辑 PPTX 与网页 SVG'),
