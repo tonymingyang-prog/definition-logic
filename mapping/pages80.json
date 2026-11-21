@@ -35,12 +35,10 @@
    "logicType": "同心环",
    "motif": "三环嵌套 + 外圈角色 + 弧形标注",
    "atoms": [
-    "medallion",
-    "arc.fan",
-    "label.aside"
+    "ring.system"
    ],
    "deckType": "hub",
-   "coverage": "part"
+   "coverage": "ok"
   },
   {
    "page": 4,
@@ -105,11 +103,11 @@
    "logicType": "半环/多层弧",
    "motif": "同心弧段多层 + 环形节点",
    "atoms": [
-    "arc.fan",
+    "arc.layers",
     "hub.radial"
    ],
    "deckType": "hub",
-   "coverage": "part"
+   "coverage": "ok"
   },
   {
    "page": 9,
@@ -490,11 +488,10 @@
    "logicType": "漏斗",
    "motif": "倒三角漏斗 + 底座 + 两侧行业",
    "atoms": [
-    "pyramid.levels",
-    "platform.disc"
+    "funnel.stage"
    ],
    "deckType": "—",
-   "coverage": "gap"
+   "coverage": "ok"
   },
   {
    "page": 38,
@@ -529,9 +526,11 @@
    "logic": "词云",
    "logicType": "词云",
    "motif": "大量文本块堆叠",
-   "atoms": [],
+   "atoms": [
+    "cloud.text"
+   ],
    "deckType": "—",
-   "coverage": "gap"
+   "coverage": "ok"
   },
   {
    "page": 41,
@@ -579,11 +578,10 @@
    "logicType": "半环/多层弧",
    "motif": "同心多层半环 + 密集小标签",
    "atoms": [
-    "arc.fan",
-    "decor.orbit"
+    "arc.layers"
    ],
    "deckType": "—",
-   "coverage": "gap"
+   "coverage": "ok"
   },
   {
    "page": 45,
@@ -800,11 +798,10 @@
    "logicType": "半环/多层弧",
    "motif": "弧形半环 + 大量行业标签 + 底部球",
    "atoms": [
-    "arc.fan",
-    "medallion"
+    "arc.layers"
    ],
    "deckType": "—",
-   "coverage": "part"
+   "coverage": "ok"
   },
   {
    "page": 62,
@@ -955,9 +952,11 @@
    "logic": "等距立体",
    "logicType": "等距立体",
    "motif": "大量等距立体块 + 中心 +AI",
-   "atoms": [],
+   "atoms": [
+    "iso.platform"
+   ],
    "deckType": "—",
-   "coverage": "gap"
+   "coverage": "ok"
   },
   {
    "page": 74,
@@ -966,11 +965,11 @@
    "logicType": "半环/多层弧",
    "motif": "扇形分层 + 左右侧注 + 底部平台",
    "atoms": [
-    "arc.fan",
-    "layers.band"
+    "sector.band",
+    "arc.layers"
    ],
    "deckType": "—",
-   "coverage": "gap"
+   "coverage": "ok"
   },
   {
    "page": 75,
@@ -1017,9 +1016,11 @@
    "logic": "蜂窝",
    "logicType": "蜂窝",
    "motif": "中心六边 + 六边环 + 左右标签",
-   "atoms": [],
+   "atoms": [
+    "honeycomb.cluster"
+   ],
    "deckType": "—",
-   "coverage": "gap"
+   "coverage": "ok"
   },
   {
    "page": 79,

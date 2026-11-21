@@ -1,7 +1,7 @@
 {
  "name": "图形元素库",
- "version": "0.1.0",
- "source": "6 份 WPS 白底咨询级静态逻辑图模板（橙/红/蓝/绿/青/紫，各 80 页）",
+ "version": "0.3.0",
+ "source": "6 份 WPS 白底咨询级静态逻辑图模板（橙/红/蓝/绿/青/紫，各 80 页）+ 80 页缺口母题补齐",
  "tokens": {
   "type": {
    "display": {
@@ -974,6 +974,229 @@
    "slots": [],
    "variants": [],
    "kind": "primitive"
+  },
+  {
+   "id": "fan.hub",
+   "name": "双扇互动环",
+   "cat": "structure",
+   "tags": [
+    "扇形",
+    "互动",
+    "中心辐射",
+    "全景",
+    "直播"
+   ],
+   "size": {
+    "w": 1500,
+    "h": 700
+   },
+   "slots": [
+    {
+     "id": "center",
+     "label": "中心（2-6 字）"
+    },
+    {
+     "id": "nodes",
+     "label": "内侧节点（2-4）"
+    },
+    {
+     "id": "left",
+     "label": "左扇标签（3-6）"
+    },
+    {
+     "id": "right",
+     "label": "右扇标签（3-6）"
+    },
+    {
+     "id": "topChips",
+     "label": "上方胶囊（1-2）"
+    },
+    {
+     "id": "bottom",
+     "label": "下方胶囊"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "ring.system",
+   "name": "环形体系",
+   "cat": "structure",
+   "tags": [
+    "同心环",
+    "扇区",
+    "维恩",
+    "全景"
+   ],
+   "size": {
+    "w": 760,
+    "h": 760
+   },
+   "slots": [
+    {
+     "id": "center",
+     "label": "中心文字"
+    },
+    {
+     "id": "venn",
+     "label": "内圈三圆（3）"
+    },
+    {
+     "id": "segments",
+     "label": "中圈扇区（4–8）"
+    },
+    {
+     "id": "nodes",
+     "label": "外圈节点（6–10）"
+    },
+    {
+     "id": "arcs",
+     "label": "弧形角标（2–6）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "funnel.stage",
+   "name": "漏斗分层",
+   "cat": "structure",
+   "tags": [
+    "漏斗",
+    "转化",
+    "分层"
+   ],
+   "size": {
+    "w": 660,
+    "h": 440
+   },
+   "slots": [
+    {
+     "id": "items",
+     "label": "层级（3–5）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "cloud.text",
+   "name": "能力词云",
+   "cat": "structure",
+   "tags": [
+    "词云",
+    "标签",
+    "能力"
+   ],
+   "size": {
+    "w": 900,
+    "h": 400
+   },
+   "slots": [
+    {
+     "id": "items",
+     "label": "词条（8–20）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "honeycomb.cluster",
+   "name": "蜂窝集群",
+   "cat": "structure",
+   "tags": [
+    "蜂窝",
+    "六边形",
+    "集群"
+   ],
+   "size": {
+    "w": 780,
+    "h": 470
+   },
+   "slots": [
+    {
+     "id": "center",
+     "label": "中心"
+    },
+    {
+     "id": "items",
+     "label": "环内格子（6–18）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "sector.band",
+   "name": "扇区环带",
+   "cat": "structure",
+   "tags": [
+    "扇区",
+    "环带",
+    "分层"
+   ],
+   "size": {
+    "w": 720,
+    "h": 720
+   },
+   "slots": [
+    {
+     "id": "center",
+     "label": "中心"
+    },
+    {
+     "id": "items",
+     "label": "扇区（3–8）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "arc.layers",
+   "name": "多层同心弧",
+   "cat": "structure",
+   "tags": [
+    "弧",
+    "全景",
+    "分层"
+   ],
+   "size": {
+    "w": 900,
+    "h": 480
+   },
+   "slots": [
+    {
+     "id": "layers",
+     "label": "层（2–4）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
+  },
+  {
+   "id": "iso.platform",
+   "name": "等距立体平台",
+   "cat": "structure",
+   "tags": [
+    "等距",
+    "3D",
+    "平台"
+   ],
+   "size": {
+    "w": 780,
+    "h": 480
+   },
+   "slots": [
+    {
+     "id": "layers",
+     "label": "层（2–4）"
+    }
+   ],
+   "variants": [],
+   "kind": "generator"
   }
  ],
  "presets": {

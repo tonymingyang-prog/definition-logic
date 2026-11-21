@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """生成 80 页模板 → 图形元素 的映射台账（JSON + Markdown）。"""
 import json, os
 from collections import Counter
@@ -93,6 +93,14 @@ ROWS = [
  (80, "营销闭环", "闭环飞轮", "左右双闭环 + 中心圆 + 四象限", ["flow.steps", "hub.radial"], "hub", "ok"),
 ]
 
+# v0.3 补齐后：这些页从「部分/缺口」升级为可覆盖
+OVERRIDE = {3: "ok", 8: "ok", 37: "ok", 40: "ok", 44: "ok", 61: "ok", 73: "ok", 74: "ok", 78: "ok"}
+ATOM_FIX = {
+    3: ["ring.system"], 8: ["arc.layers", "hub.radial"], 37: ["funnel.stage"],
+    40: ["cloud.text"], 44: ["arc.layers"], 61: ["arc.layers"],
+    73: ["iso.platform"], 74: ["sector.band", "arc.layers"], 78: ["honeycomb.cluster"],
+}
+
 data = []
 SHAPES = {}
 _shp = r"D:\DSH-work\guizang-elements\refs\pages80.json"
@@ -118,7 +126,8 @@ LOGIC = {
 
 for n, topic, logic, motif, atoms, ptype, cov in ROWS:
     data.append({"page": n, "topic": topic, "logic": logic, "logicType": LOGIC.get(n, logic),
-                 "motif": motif, "atoms": atoms, "deckType": ptype, "coverage": cov})
+                 "motif": motif, "atoms": ATOM_FIX.get(n, atoms), "deckType": ptype,
+                 "coverage": OVERRIDE.get(n, cov)})
 
 cov = Counter(d["coverage"] for d in data)
 types = Counter(d["deckType"] for d in data)
@@ -184,18 +193,26 @@ lines.append("**覆盖**：✅ %d 页 / ◐ %d 页 / ✗ %d 页（共 %d 页）\
 lines.append("**按页型**：" + "、".join("%s %d 页" % (k, v) for k, v in types.most_common()) + "\n")
 lines.append("**原子使用频次**：" + "、".join("`%s` %d" % (k, v) for k, v in atomc.most_common()) + "\n")
 lines.append("**逻辑骨架分布**：" + "、".join("%s %d" % (k, v) for k, v in logic.most_common()) + "\n")
-lines.append("## 五、缺口（下一批要补的原子）\n")
-lines.append("| 缺口母题 | 出现页 | 建议新增原子 | 用途 |")
+lines.append("## 五、缺口：已补齐与仍缺\n")
+lines.append("v0.3 新增 7 个原子，把 6 个「没有母题」的页面补成了可出图：\n")
+lines.append("| 已补母题 | 原出现页 | 新增原子 | 状态 |")
 lines.append("|---|---|---|---|")
-lines.append("| 漏斗 / 倒三角 | 37 | `funnel.stage` | 生态分层、转化漏斗 |")
-lines.append("| 词云 / 文本块阵 | 40、71 | `cloud.text` | 能力词云、标签云 |")
-lines.append("| 多层同心弧（3 层以上） | 8、44、61、74 | `arc.layers` | 全景图、场景矩阵 |")
-lines.append("| 等距立体平台 | 73 | `iso.platform` | 3D 平台/机房/城市 |")
-lines.append("| 扇形分层 | 74 | `sector.band` | 研发中台、能力分层 |")
-lines.append("| 蜂窝六边形集群 | 78 | `honeycomb.cluster` | 营销/生态能力网 |")
-lines.append("| 扇区底座 | 46、54 | `base.sector` | 行业扇区、城市底座 |")
+lines.append("| 环形体系（同心扇区 + 维恩 + 光环节点 + 弧形字） | 3 | `ring.system` | ✅ 可出图 |")
+lines.append("| 漏斗 / 倒三角 | 37 | `funnel.stage` | ✅ 可出图 |")
+lines.append("| 词云 / 文本块阵 | 40、71 | `cloud.text` | ✅ 可出图 |")
+lines.append("| 多层同心弧 | 8、44、61 | `arc.layers` | ✅ 可出图 |")
+lines.append("| 扇形分层 | 74 | `sector.band` | ✅ 可出图 |")
+lines.append("| 蜂窝六边形集群 | 78 | `honeycomb.cluster` | ✅ 可出图 |")
+lines.append("| 等距立体平台 | 73 | `iso.platform` | ✅ 可出图 |")
+lines.append("")
+lines.append("**仍缺**（下一批）：\n")
+lines.append("| 仍缺母题 | 出现页 | 建议原子 | 说明 |")
+lines.append("|---|---|---|---|")
+lines.append("| 扇区底座 | 46、54 | `base.sector` | 行业扇区与底座结合 |")
 lines.append("| 球体 / 半球 | 20、30、46 | `sphere.dome` | 行业模型、能力球 |")
-lines.append("| 立体圆柱（带阶段） | 12、23、27 | `disc.stack`（现有 platform.disc 扩展） | 活动节奏、平台基座 |")
+lines.append("| 立体圆柱（带阶段） | 12、23、27 | `disc.stack` | 现有 platform.disc 的扩展 |")
+lines.append("| 金字塔 / 冰山（页型） | 18、22、48 | 页型 `pyramid` | 原子有，缺整页图纸 |")
+lines.append("| 暗色主题 | 黑色背景 12 份 | 暗色调色板 | 目前只能靠 bg 覆盖 |")
 lines.append("")
 lines.append("## 六、配色与背景映射（另外 23 份模板）\n")
 lines.append("| 维度 | 取值 | 对应 |")

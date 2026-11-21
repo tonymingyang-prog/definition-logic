@@ -1,6 +1,6 @@
 ---
 name: guizang-elements
-description: 用「图形元素库」里的咨询级图形元素（卡片、页签、平台叠层、中心圆盘、弧形标签、泳道、时间轴、矩阵、金字塔、双心桥接、生态支撑、装饰件等 35 个）拼出静态逻辑图 / 架构图，并导出可编辑 PPTX、网页 SVG 或整页 HTML。当用户要做逻辑图、架构图、全景图、能力矩阵、路线图，或说“用图形元素库拼一张”“做成 PPT 里的图”时使用。
+description: 用「图形元素库」里的咨询级图形元素（卡片、页签、平台叠层、中心圆盘、弧形标签、泳道、时间轴、矩阵、金字塔、双心桥接、生态支撑、装饰件等 43 个；含环形体系、漏斗、词云、蜂窝、扇区、多层弧、等距立体）拼出静态逻辑图 / 架构图，并导出可编辑 PPTX、网页 SVG 或整页 HTML。当用户要做逻辑图、架构图、全景图、能力矩阵、路线图，或说“用图形元素库拼一张”“做成 PPT 里的图”时使用。
 metadata:
   version: "0.1.0"
 ---
@@ -89,6 +89,8 @@ metadata:
 **流程与路径（flow）**：`flow.chevron` V 形流程、`flow.steps` 节点步骤流、`flow.lanes` 纵向泳道带、`timeline` 时间轴、`stack.list` 纵向清单、`board.columns` 看板分栏
 
 **结构与体系（structure）**：`platform.disc` 平台叠层（等距圆柱）、`medallion` 中心圆盘、`hub.radial` 中心辐射、`arc.fan` 弧形标签扇、`dual.hub` 双心桥接、`eco.bracket` 主体+两侧支撑、`matrix.grid` 矩阵网格、`pyramid.levels` 金字塔层级、`layers.band` 横向分层
+
+**第二批（v0.3 补齐的缺口母题）**：ing.system 环形体系（同心扇区 + 维恩 + 光环节点 + 弧形字）、unnel.stage 漏斗、cloud.text 词云、honeycomb.cluster 蜂窝、sector.band 扇区环带、rc.layers 多层同心弧、iso.platform 等距立体平台
 
 **文字与装饰（text / decor）**：`title.block` 标题块、`decor.dot-arc` 点阵弧、`decor.orbit` 虚线轨道、`decor.wash` 柔光底衬、`decor.corner` 角标刻度
 
