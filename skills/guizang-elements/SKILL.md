@@ -119,7 +119,7 @@ metadata:
 
 ## 五、配色
 
-6 套：`orange` 橙、`red` 红、`blue` 蓝、`green` 绿、`teal` 青、`purple` 紫。
+6 套预设：`orange` 橙、`red` 红、`blue` 蓝、`green` 绿、`teal` 青、`purple` 紫；**也可以直接传任意主色 `#RRGGBB`**（如 palette: "#0E7490"），会按同一套算法派生出 t1–t6 与 d1/d2 色阶。
 每套自动派生 6 级浅淡（t1–t6）与两级深色（d1/d2），**层次感靠浅淡阶梯表达，不要在一张图里堆 3 种主色**。
 
 ## 六、组合原则（拼整页时）
