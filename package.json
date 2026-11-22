@@ -1,6 +1,6 @@
 {
   "name": "dsh-guizang-elements",
-  "version": "0.1.0",
+  "version": "0.3.1",
   "private": true,
   "type": "module",
   "description": "图形元素库 · DSH 插件：把咨询级静态逻辑图拆成可复用图形原子，一套 JSON 同时产出可编辑 PPTX 与网页 SVG。",
@@ -31,5 +31,8 @@
   },
   "engines": {
     "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "check": "node tools/self-check.mjs"
   }
 }
