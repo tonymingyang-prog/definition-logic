@@ -1290,13 +1290,13 @@
    "blocks": 1
   },
   "ring-ecosystem": {
-   "name": "环形体系（同心扇区 + 两侧说明 + 结论条）",
+   "name": "环形体系（同心扇区 + 两侧说明）",
    "size": {
     "w": 1280,
     "h": 720
    },
    "palette": "blue",
-   "blocks": 9
+   "blocks": 8
   }
  }
 }
