@@ -1,6 +1,6 @@
 # 仓库与上传
 
-仓库地址：**https://github.com/tonymingyang-prog/definition-logic**（私有）
+仓库地址：**https://github.com/tonymingyang-prog/definition-logic**（公开）
 
 - 默认分支：`main`
 - 首次提交：`430db05` — `feat: 定义逻辑图 v0.2（35 原子 / 15 图纸 / 80 页模板映射）`

@@ -4,11 +4,13 @@
 
 > 仓库 Repository: **https://github.com/tonymingyang-prog/definition-logic**（公开 public） · MIT
 > Parametric diagram primitives for PowerPoint — one JSON scene → editable PPTX + SVG.
-> 44 atoms · 8 page presets · 15 deck page types · 80-page template study · MIT
+> 44 atoms · 8 page presets · 15 deck page types · 141-page template study · MIT
 
-**English** — A self-built diagram system distilled from six consulting-grade Chinese PPT template packs (80 pages each). 44 parameterized primitives, 15 deck page types, native-editable PPTX and SVG from one scene description.
+**English** — A self-built diagram system distilled from three consulting-grade Chinese PPT template packs (141 pages, 4,472 shapes). 44 parameterized primitives, 15 deck page types, native-editable PPTX and SVG from one scene description.
 
-**中文** — 从 6 份咨询级静态逻辑图模板（各 80 页）里拆出来的图形体系：44 个图形原子、15 种图纸页型、8 套整页预设；一套 JSON 同时产出可编辑 PPTX 与 SVG。
+**中文** — 从 3 份咨询级静态逻辑图模板（141 页、4472 个形状）里拆出来的图形体系：44 个图形原子、15 种图纸页型、8 套整页预设；一套 JSON 同时产出可编辑 PPTX 与 SVG。
+
+![preview](docs/images/preview-long.png)
 
 ![sample book](docs/images/sample-book.png)
 ![ring](docs/images/ring.png)
@@ -17,7 +19,9 @@
 
 一套**自建的 PPT 逻辑图体系**：把咨询级静态逻辑图 / 架构图拆成可参数化的图形原子，一套 JSON 同时产出**可编辑 PPTX**（原生形状）与**网页 SVG**。
 
-> 不是模板复制品。模板里 1.3 万个形状被归一成 44 个原子，靠参数（层数、条目、行列、配色）重新生成，而不是把某几页抠下来复用。
+> 不是模板复制品。模板里 4472 个形状被归一成 44 个原子，靠参数（层数、条目、行列、配色）重新生成，而不是把某几页抠下来复用。
+
+> 长文：[80 页 PPT 模板，最后只剩 44 个原子](docs/长文-80页到44个原子.md)
 
 ## 现在有什么
 
