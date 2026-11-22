@@ -1,6 +1,8 @@
 # 定义逻辑图 · Definition Logic Diagram
 
-> 仓库 Repository: **https://github.com/tonymingyang-prog/definition-logic**（私有 private） · MIT
+[![check](https://github.com/tonymingyang-prog/definition-logic/actions/workflows/check.yml/badge.svg)](https://github.com/tonymingyang-prog/definition-logic/actions/workflows/check.yml)
+
+> 仓库 Repository: **https://github.com/tonymingyang-prog/definition-logic**（公开 public） · MIT
 > Parametric diagram primitives for PowerPoint — one JSON scene → editable PPTX + SVG.
 > 44 atoms · 8 page presets · 15 deck page types · 80-page template study · MIT
 
