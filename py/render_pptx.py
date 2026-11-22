@@ -1,4 +1,4 @@
-﻿"""场景 JSON → 原生可编辑 PPTX（python-pptx）
+"""场景 JSON → 原生可编辑 PPTX（python-pptx）
 用法： python render_pptx.py scene.json out.pptx
 场景坐标单位：px（1280×720 设计空间，1px = 9525 EMU = 0.75pt）
 """
@@ -91,10 +91,78 @@ def add_text(slide, it):
     return box
 
 
+def set_stop_alpha(stop, alpha):
+    """给渐变停靠点加透明度"""
+    try:
+        clr = stop._gs.find(qn('a:srgbClr'))
+        if clr is None:
+            return
+        for old in clr.findall(qn('a:alpha')):
+            clr.remove(old)
+        el = etree.SubElement(clr, qn('a:alpha'))
+        el.set('val', str(int(max(0.0, min(1.0, alpha)) * 100000)))
+    except Exception:
+        pass
+
+
+def gradient_fill(shape, it):
+    """线性渐变：fillGrad { from, to, angle|vertical, opacity }"""
+    g = it['fillGrad']
+    shape.fill.gradient()
+    stops = shape.fill.gradient_stops
+    for i, key in enumerate(('from', 'to')):
+        if i < len(stops):
+            stops[i].color.rgb = hexcolor(g.get(key) or '#FFFFFF')
+            if g.get('opacity') is not None:
+                set_stop_alpha(stops[i], g['opacity'])
+    ang = g.get('angle')
+    if ang is None:
+        ang = 90 if g.get('vertical', True) else 0
+    try:
+        shape.fill.gradient_angle = float(ang)
+    except Exception:
+        pass
+
+
+def apply_effects(shape, it):
+    """发光 / 外阴影（python-pptx 没有 API，直接写 effectLst）"""
+    glow, shadow = it.get('glow'), it.get('shadow')
+    if not glow and not shadow:
+        return
+    try:
+        spPr = shape._element.spPr
+        for old in spPr.findall(qn('a:effectLst')):
+            spPr.remove(old)
+        eff = etree.SubElement(spPr, qn('a:effectLst'))
+        if glow:
+            rad = int(round(float(glow.get('radius', 10)) * PX))
+            g = etree.SubElement(eff, qn('a:glow'))
+            g.set('rad', str(rad))
+            c = etree.SubElement(g, qn('a:srgbClr'))
+            c.set('val', str(glow.get('color') or '#1E63E9').lstrip('#').upper())
+            a = etree.SubElement(c, qn('a:alpha'))
+            a.set('val', str(int(round(float(glow.get('opacity', 0.35)) * 100000))))
+        if shadow:
+            s = etree.SubElement(eff, qn('a:outerShdw'))
+            s.set('blurRad', str(int(round(float(shadow.get('blur', 12)) * PX))))
+            s.set('dist', str(int(round(float(shadow.get('dist', 4)) * PX))))
+            s.set('dir', str(int(round(float(shadow.get('dir', 90)) * 60000))))
+            s.set('rotWithShape', '0')
+            c = etree.SubElement(s, qn('a:srgbClr'))
+            c.set('val', str(shadow.get('color') or '#0B2E7A').lstrip('#').upper())
+            a = etree.SubElement(c, qn('a:alpha'))
+            a.set('val', str(int(round(float(shadow.get('opacity', 0.18)) * 100000))))
+    except Exception:
+        pass
+
+
 def apply_fill(shape, it):
     fill = it.get('fill')
     if it.get('fillGrad') and not fill:
         fill = it['fillGrad'].get('from') or '#EEEEEE'
+    if it.get('fillGrad'):
+        gradient_fill(shape, it)
+        return
     if not fill or fill == 'none':
         shape.fill.background()
         return
@@ -170,6 +238,7 @@ def paint_slide(slide, scene):
             else:
                 apply_fill(shape, it)
             apply_line(shape, it)
+            apply_effects(shape, it)
             no_shadow(shape)
             if it.get('rotate'):
                 shape.rotation = float(it['rotate'])
@@ -184,6 +253,7 @@ def paint_slide(slide, scene):
                     pass
             apply_fill(shape, it)
             apply_line(shape, it)
+            apply_effects(shape, it)
             no_shadow(shape)
             if it.get('rotate'):
                 shape.rotation = float(it['rotate'])
