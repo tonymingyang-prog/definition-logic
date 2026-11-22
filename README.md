@@ -1,9 +1,16 @@
-# 图形元素 · Graphic Elements
+# 定义逻辑 · Definition Logic
 
-> 仓库：**https://github.com/tonymingyang-prog/graphic-elements**（私有） · MIT
-> 上传与更新流程见 [UPLOAD.md](UPLOAD.md)
+> Parametric diagram primitives for PowerPoint — one JSON scene → editable PPTX + SVG.
+> 44 atoms · 8 page presets · 15 deck page types · 80-page template study · MIT
 
-一套**自建的 PPT 图形元素体系**：把咨询级静态逻辑图 / 架构图拆成可参数化的图形原子，一套 JSON 同时产出**可编辑 PPTX**（原生形状）与**网页 SVG**。
+**English** — A self-built diagram system distilled from six consulting-grade Chinese PPT template packs (80 pages each). 44 parameterized primitives, 15 deck page types, native-editable PPTX and SVG from one scene description.
+
+**中文** — 从 6 份咨询级静态逻辑图模板（各 80 页）里拆出来的图形体系：44 个图形原子、15 种图纸页型、8 套整页预设；一套 JSON 同时产出可编辑 PPTX 与 SVG。
+
+![sample book](docs/images/sample-book.png)
+![ring](docs/images/ring.png)
+
+一套**自建的 PPT 逻辑图体系**：把咨询级静态逻辑图 / 架构图拆成可参数化的图形原子，一套 JSON 同时产出**可编辑 PPTX**（原生形状）与**网页 SVG**。
 
 > 不是模板复制品。模板里 1.3 万个形状被归一成 44 个原子，靠参数（层数、条目、行列、配色）重新生成，而不是把某几页抠下来复用。
 
@@ -12,10 +19,10 @@
 | 维度 | 数量 | 说明 |
 |---|---|---|
 | 图形原子 | **44** | 卡片与标签 / 容器与栏位 / 流程与路径 / 结构与体系 / 文字块 / 装饰件 |
-| 整页预设 | **7** | 平台架构、能力矩阵、流程路线、生态支撑、中心辐射、环形体系、双边方案（v2 版式，自带底部结论条） |
+| 整页预设 | **8** | 平台架构、能力矩阵、流程路线、生态支撑、中心辐射、环形体系、双边方案（v2 版式，自带底部结论条） |
 | 图纸页型 | **15** | `gze_deck` 用：封面/目录/章节/泳道/指标/叠层/矩阵/分层/辐射/生态/时间轴/V 形/对比/清单/收尾 |
 | 配色 | **6 + 任意色** | 橙 / 红 / 蓝 / 绿 / 青 / 紫 六套预设；也可传任意 `#RRGGBB`，按同一算法派生 6 级浅淡 + 2 级深色 |
-| 模板映射 | **80 页** | 逐页对齐「模板母题 → 原子 → 页型」，50 页可直接映射，见 [映射矩阵](docs/模板映射矩阵.md) |
+| 模板映射 | **80 页** | 逐页对齐「模板母题 → 原子 → 页型」，59 页可直接映射，见 [映射矩阵](docs/模板映射矩阵.md) 与 [逐页学习图鉴](docs/images/study-atlas-1.png) |
 | 输出通道 | 3 | PPTX（原生可编辑）/ SVG（矢量）/ HTML（演示页） |
 
 ## 文档
@@ -105,7 +112,7 @@ install_bundle  target = link:<此目录绝对路径>
 
 ## 面板
 
-侧栏「图形元素」→ `/guizang-elements/`：分类筛选、六色切换、点开任意元素试填槽位、一键导出 PPTX / SVG / HTML。
+侧栏「定义逻辑」→ `/guizang-elements/`：分类筛选、六色切换、点开任意元素试填槽位、一键导出 PPTX / SVG / HTML。
 
 接口：
 

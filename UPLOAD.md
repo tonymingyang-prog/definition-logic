@@ -3,7 +3,7 @@
 仓库地址：**https://github.com/tonymingyang-prog/graphic-elements**（私有）
 
 - 默认分支：`main`
-- 首次提交：`430db05` — `feat: 图形元素库 v0.2（35 原子 / 15 图纸 / 80 页模板映射）`
+- 首次提交：`430db05` — `feat: 定义逻辑 v0.2（35 原子 / 15 图纸 / 80 页模板映射）`
 - 账号：`tonymingyang-prog`（gh OAuth 登录，token scopes：`repo`、`read:org`、`gist`）
 - Topics：`pptx` `powerpoint` `svg` `design-system` `dsh-plugin` `graphic-elements`
 
