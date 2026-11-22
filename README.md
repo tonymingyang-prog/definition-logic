@@ -11,6 +11,8 @@
 ![sample book](docs/images/sample-book.png)
 ![ring](docs/images/ring.png)
 
+**网页版 / Web version** — 直接打开 examples/1.0-雏形.html（← → 翻页、F 全屏），原子图鉴 examples/44原子图鉴.html。
+
 一套**自建的 PPT 逻辑图体系**：把咨询级静态逻辑图 / 架构图拆成可参数化的图形原子，一套 JSON 同时产出**可编辑 PPTX**（原生形状）与**网页 SVG**。
 
 > 不是模板复制品。模板里 1.3 万个形状被归一成 44 个原子，靠参数（层数、条目、行列、配色）重新生成，而不是把某几页抠下来复用。
