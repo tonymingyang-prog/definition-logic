@@ -3,7 +3,7 @@
   "version": "0.4.2",
   "private": true,
   "type": "module",
-  "description": "定义逻辑 · DSH 插件：把咨询级静态逻辑图拆成可复用图形原子，一套 JSON 同时产出可编辑 PPTX 与网页 SVG。",
+  "description": "定义逻辑图 · DSH 插件：把咨询级静态逻辑图拆成可复用图形原子，一套 JSON 同时产出可编辑 PPTX 与网页 SVG。",
   "main": "lib/index.js",
   "icon": "./icon.svg",
   "exports": {

@@ -2,7 +2,7 @@
 
 ## v0.4.2 — 2026-11-23
 
-- 全面更名：图形元素 → **定义逻辑**（Definition Logic），技术 id 保持不变
+- 全面更名：图形元素 → **定义逻辑图**（Definition Logic），技术 id 保持不变
 - 环形体系（`ring.system`）按参考模板重画：满版构图、沿弧逐字、五段角标、维恩比例
 - 新增满版预设 `ring-panorama`；重排 `ring-ecosystem`（560 环 + 两侧三卡）
 

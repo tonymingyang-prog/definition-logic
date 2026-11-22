@@ -1,4 +1,4 @@
-# 定义逻辑 · Definition Logic
+# 定义逻辑图 · Definition Logic Diagram
 
 > 仓库 Repository: **https://github.com/tonymingyang-prog/definition-logic**（私有 private） · MIT
 > Parametric diagram primitives for PowerPoint — one JSON scene → editable PPTX + SVG.
@@ -113,7 +113,7 @@ install_bundle  target = link:<此目录绝对路径>
 
 ## 面板
 
-侧栏「定义逻辑」→ `/guizang-elements/`：分类筛选、六色切换、点开任意元素试填槽位、一键导出 PPTX / SVG / HTML。
+侧栏「定义逻辑图」→ `/guizang-elements/`：分类筛选、六色切换、点开任意元素试填槽位、一键导出 PPTX / SVG / HTML。
 
 接口：
 
