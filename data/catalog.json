@@ -1,6 +1,6 @@
 {
  "name": "图形元素库",
- "version": "0.3.0",
+ "version": "0.4.0",
  "source": "6 份 WPS 白底咨询级静态逻辑图模板（橙/红/蓝/绿/青/紫，各 80 页）+ 80 页缺口母题补齐",
  "tokens": {
   "type": {
@@ -1227,49 +1227,67 @@
  ],
  "presets": {
   "platform-overview": {
-   "name": "平台总体架构（叠层 + 结论条）",
-   "size": {
-    "w": 1280,
-    "h": 720
-   },
-   "palette": "orange",
-   "blocks": 3
-  },
-  "capability-matrix": {
-   "name": "能力矩阵（四象限 + 结论条）",
+   "name": "平台总体架构（叠层 + 四注解 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
    "palette": "blue",
-   "blocks": 3
+   "blocks": 7
+  },
+  "capability-matrix": {
+   "name": "能力评估矩阵（矩阵 + 判定 + 结论条）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "blue",
+   "blocks": 6
   },
   "process-roadmap": {
-   "name": "流程与路线（V 形 + 时间轴 + 结论条）",
+   "name": "端到端流程与路线（V 形 + 阶段卡 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
-   "palette": "green",
-   "blocks": 4
+   "palette": "blue",
+   "blocks": 9
   },
   "ecosystem": {
-   "name": "生态与支撑（中心 + 两侧 + 结论条）",
+   "name": "生态与支撑（中心 + 两侧 + 三卡 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
-   "palette": "purple",
-   "blocks": 3
+   "palette": "blue",
+   "blocks": 6
   },
   "hub-overview": {
-   "name": "中心辐射（一图看全局 + 结论条）",
+   "name": "中心辐射（中心 + 四注解 + 结论条）",
    "size": {
     "w": 1280,
     "h": 720
    },
-   "palette": "teal",
+   "palette": "blue",
+   "blocks": 7
+  },
+  "solution-dual": {
+   "name": "双边方案（双中心桥接 + 两张对照 + 结论条）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "blue",
    "blocks": 5
+  },
+  "ring-panorama": {
+   "name": "环形全景（满版，无页眉）",
+   "size": {
+    "w": 1280,
+    "h": 720
+   },
+   "palette": "blue",
+   "blocks": 1
   },
   "ring-ecosystem": {
    "name": "环形体系（同心扇区 + 两侧说明 + 结论条）",
@@ -1279,15 +1297,6 @@
    },
    "palette": "blue",
    "blocks": 9
-  },
-  "solution-dual": {
-   "name": "双边方案（双中心桥接 + 结论条）",
-   "size": {
-    "w": 1280,
-    "h": 720
-   },
-   "palette": "red",
-   "blocks": 4
   }
  }
 }

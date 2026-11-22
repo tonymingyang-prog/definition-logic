@@ -2,9 +2,9 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { ALL } from '../lib/compose.js';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
+const { ALL, PRESETS } = await import('file://' + join(HERE, '..', 'lib', 'compose.js').replace(/\\/g, '/'));
 const FILE = join(HERE, '..', 'data', 'catalog.json');
 const cat = JSON.parse(readFileSync(FILE, 'utf8'));
 
@@ -24,7 +24,10 @@ for (const def of ALL) {
   });
   added++;
 }
-cat.version = '0.3.0';
+const presets = {};
+for (const [k, v] of Object.entries(PRESETS)) presets[k] = { name: v.name, size: { w: v.w, h: v.h }, palette: v.palette, blocks: v.blocks.length };
+cat.presets = presets;
+cat.version = '0.4.0';
 cat.source = '6 份 WPS 白底咨询级静态逻辑图模板（橙/红/蓝/绿/青/紫，各 80 页）+ 80 页缺口母题补齐';
 writeFileSync(FILE, JSON.stringify(cat, null, 1), 'utf8');
 console.log(JSON.stringify({ added, total: cat.elements.length }));
